@@ -1,0 +1,439 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, #116221,#179956);
+    padding: 0 !important; 
+}
+
+.navbar-brand img{
+    height: 50px;
+    padding-left: 20px;
+}
+
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+
+.navbar-nav li a
+{
+   color: #fff;
+   font-weight: 600;
+   float: right;
+   text-align: left;
+}
+
+.fa-bars
+{
+    color: #fff;
+    font-size: 30px; 
+}
+
+.navbar-toggler
+{
+    outline: none !important;
+}
+
+/*------------------------Banner Section-----------------------------*/
+
+#banner {
+    background: url("images/munnar.jpg") no-repeat center center/cover;
+    color: #fff;
+    min-height: 100vh;          /* full screen height */
+    display: flex;
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
+    text-align: center;         /* center text */
+}
+
+.promo-title {
+    font-size: 60px;
+    font-weight: 700;
+    color: beige;
+     text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    margin: 0;                  /* remove extra space pushing it down */
+    animation: fadeSlideUp 1s ease-out;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.promo-titleb {
+    font-size: 30px;
+    font-weight: 400;
+    color: beige;
+     text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+     animation: fadeSlideUp 1s ease-out;
+    margin: 0;                  /* remove extra space pushing it down */
+}
+
+
+.play-btn
+{
+    width: 45px;
+    animation: fadeSlideUp 1s ease-out;
+    margin: 20px;
+}
+
+#banner a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.bottom-img
+{
+    width: 100%;
+}
+.gradient-btn {
+    background: linear-gradient(to right, #116221,#179956);
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 200px;
+    font-weight: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 50px;
+}
+
+/* Hover effect */
+.gradient-btn:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+.gradient-btn:hover {
+    box-shadow: 0 0 10px rgba(23, 238, 8, 0.6),
+                0 0 25px rgba(7, 98, 50, 0.7);
+}
+
+
+/*------------------------About-us Section-----------------------------*/
+
+#about-us {
+    padding: 50px 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+
+    background-size: cover;
+    background-position: center;
+    animation: bgSwitch 8s infinite alternate ease-in-out;
+}
+
+@keyframes bgSwitch {
+    0% {
+        background-image: url("images/abtus1.jpg");
+    }
+    50% {
+        background-image: url("images/abtus2.jpg");
+    }
+    100% {
+        background-image: url("images/abtus1.jpg");
+    }
+}
+
+.about-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+#about-us ul li
+{
+    margin: 10px 0;
+}
+
+#about-us ul
+{
+    margin-left: -10px;
+    list-style-type: disc;
+}
+
+
+
+/* ===== ROOMS SECTION ===== */
+.rooms-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Reduce card width */
+.room-card {
+    background: #f6f8f7;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 70%;                 /* reduce card size; adjust as needed */
+    max-width: 450px;           /* stops image from getting too big on big screens */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Reduce image size inside card */
+.room-card img {
+    width: 100%;
+    height: 220px;              /* control height */
+    object-fit: cover;          /* keeps image from stretching */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Heading & price adjust */
+.room-card h2 {
+    color: #2e4f36;
+    font-size: 1.4rem;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4f7a56;
+}
+
+
+/* ===== BOOKING FORM ===== */
+.booking-form {
+    background: #eef3ed;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e4f36;
+}
+
+.booking-form form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 12px;
+    background: #4f7a56;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #2e4f36;
+}
+
+
+
+/*------------------------Testimonials Section-----------------------------*/
+
+#testimonials
+{
+    margin-top: 100px 0;
+    background-image: linear-gradient(to right, #116221,#179956);
+}
+
+.testimonials
+{
+    border-left: 4px solid #12810a;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.testimonials p
+{
+    color: #fff;
+}
+
+.testimonials img
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.user-details
+{
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.offset-1 {
+    padding-top: 40px;
+    margin-left: 8.333333%;
+}
+
+.titleheadTM
+{
+    font-size: 70px;
+    font-weight: 800px;
+    color: #fff;
+     text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    text-align: center;
+    margin: 15px; 
+
+}
+
+/*------------------------Social-Media Section-----------------------------*/
+
+#social-media
+{
+   background-image: linear-gradient(to right, #116221,#179956);
+    padding: 100px 0;
+}
+
+#social-media p
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.social-icons img
+{
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover img
+{
+    transform: translateY(-10px);
+}
+
+
+#gallery {
+    padding: 40px;
+    background-color: #ffffff; /* optional */
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+    gap: 15px; /* space between images */
+}
+
+.img-grid img {
+    width: 100%;
+    height: 250px;        /* keeps equal tile height */
+    object-fit: cover;    /* prevents distortion */
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover zoom effect (optional) */
+.img-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/*------------------------Footer Section-----------------------------*/
+#footer
+{
+    background-image: linear-gradient(to right, #116221,#179956);
+    color: #fff;
+
+}
+
+.footer-img
+{
+    width: 100%;
+}
+
+.footer-box
+{
+    padding: 20px;
+}
+
+.footer-box img
+{
+    width: 120px;
+    margin-top: 20px;
+}
+
+.footer-box .fa 
+{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #116221,#179956);
+
+}
+
+.footer-box .form-control
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-box .btn-primary
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #116221,#179956);
+}
+
+hr
+{
+    background-color: #fff;
+}
+
+.copyright
+{
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+
